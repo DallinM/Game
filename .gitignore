@@ -58,7 +58,4 @@ Carthage/Build
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
-fastlane/test_outpu
-
-
-1 Comment
+fastlane/test_output
