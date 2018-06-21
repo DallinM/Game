@@ -12,6 +12,7 @@
 		30D528F020DC205600A55BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D528EE20DC205600A55BB1 /* Main.storyboard */; };
 		30D528F220DC205700A55BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D528F120DC205700A55BB1 /* Assets.xcassets */; };
 		30D528F520DC205700A55BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D528F320DC205700A55BB1 /* LaunchScreen.storyboard */; };
+		4264C02E20DC3E65006AC486 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4264C02D20DC3E65006AC486 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		30D528F120DC205700A55BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30D528F420DC205700A55BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30D528F620DC205700A55BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4264C02D20DC3E65006AC486 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		30D528E920DC205600A55BB1 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				4264C02C20DC3E52006AC486 /* Model */,
 				30D528EA20DC205600A55BB1 /* AppDelegate.swift */,
 				30D528EC20DC205600A55BB1 /* ViewController.swift */,
 				30D528EE20DC205600A55BB1 /* Main.storyboard */,
+				4264C02B20DC3E2F006AC486 /* Resources */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		4264C02B20DC3E2F006AC486 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				30D528F120DC205700A55BB1 /* Assets.xcassets */,
 				30D528F320DC205700A55BB1 /* LaunchScreen.storyboard */,
 				30D528F620DC205700A55BB1 /* Info.plist */,
 			);
-			path = Game;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4264C02C20DC3E52006AC486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4264C02D20DC3E65006AC486 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D528ED20DC205600A55BB1 /* ViewController.swift in Sources */,
+				4264C02E20DC3E65006AC486 /* Card.swift in Sources */,
 				30D528EB20DC205600A55BB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FG8T6Y42N;
-				INFOPLIST_FILE = Game/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Game/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FG8T6Y42N;
-				INFOPLIST_FILE = Game/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Game/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
